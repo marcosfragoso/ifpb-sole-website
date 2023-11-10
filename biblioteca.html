@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./assets/img/biblioteca.svg">
+    <link rel="stylesheet" href="./assets/css/biblioteca.css">
+    <title>Biblioteca - Página Inicial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logout-div">
+            <a href="./login.html"><img class="logout" src="./assets/img/logout.svg" alt="Logout"></a>
+        </div>
+        <h2>REALIZAR EMPRÉSTIMO</h2>
+        <form class="form" action="" method="post">
+            <label for="busca"><b>Livros disponíveis:</b></label>
+            <ul id="livros-list" class="livros-grid">
+                <li>
+                    <input type="radio" name="livro" value="cleancode" id="cleancode">
+                    <label for="cleancode">
+                        <img src="./assets/img/cleancode.jpg" alt="Livro Código Limpo">
+                        Código Limpo: Habilidades Práticas do Agile Software - Rober C. Martin 
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="padroes" id="padroes">
+                    <label for="padroes">
+                        <img src="./assets/img/padroesprojeto.jpg" alt="Livro Padrões de Projetos">
+                        Padrões de Projetos: Soluções Reutilizáveis de Software Orientado a Objetos - Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="teoria" id="teoria">
+                    <label for="teoria">
+                        <img src="./assets/img/teoriadacomputacao.jpg" alt="Livro Introdução à Teoria da Computação">
+                        Introdução à Teoria da Computação - Michael Sipser
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="pragmatico" id="pragmatico">
+                    <label for="pragmatico">
+                        <img src="./assets/img/pragmatico.jpg" alt="Livro O Programador Pragmático">
+                        O Programador Pragmático: Seu Caminho para a Maestria - Andrew Hunt e David 
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="estrutura" id="estrutura">
+                    <label for="estrutura">
+                        <img src="./assets/img/estruturas.jpg" alt="Livro Estrutura e Interpretação de Programas de Computador">
+                        Estrutura e Interpretação de Programas de Computador - Harold Abelson e Gerald Jay Sussman
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="java" id="java">
+                    <label for="java">
+                        <img src="./assets/img/javaefetivo.jpg" alt="Livro Java Efetivo">
+                        Java Efetivo - Joshua Bloch
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="arquitetura" id="arquitetura">
+                    <label for="arquitetura">
+                        <img src="./assets/img/arquiteturalimpa.jpg" alt="Livro Arquitetura Limpa">
+                        Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software - Robert C. Martin
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="python" id="python">
+                    <label for="python">
+                        <img src="./assets/img/python.jpg" alt="Livro Use a Cabeça! Python">
+                        Use a Cabeça! Python - Paul Barry e David Griffiths
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="livro" value="refatoracao" id="refatoracao">
+                    <label for="refatoracao">
+                        <img src="./assets/img/refatoracao.jpg" alt="Livro Refatoração">
+                        Refatoração: Aperfeiçoando o Design de Código Existente - Martin Fowler
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Reservar</button>
+        </form>
+        <h3 class="mensagem"></h3>
+        <div class="resultado">
+            
+        </div>
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

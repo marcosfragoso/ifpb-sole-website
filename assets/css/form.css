@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+    --primary-color-darker: #5b8a5f;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form .botao {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  height: 60px;
+  cursor: pointer;
+  
+}
+
+.botao p {
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+form .botao:hover {
+  background: var(--primary-color-darker);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}

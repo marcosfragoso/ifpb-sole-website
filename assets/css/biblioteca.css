@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+    --primary-color-darker: #5b8a5f;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+h2 {
+    padding-bottom: 4rem;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+img {
+
+    max-width: 300px; 
+    max-height: 400px; 
+    width: auto; 
+    height: auto; 
+    
+}
+
+
+.livros-grid {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.livros-grid li {
+    width: calc(33.33% - 10px); 
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.livros-grid img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.logout {
+    width: 2rem;
+    height: 2rem;
+    text-align: right;
+}
+
+.logout-div {
+    text-align: right;
+}
+
+
+
